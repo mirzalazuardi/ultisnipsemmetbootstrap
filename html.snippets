@@ -1,0 +1,23 @@
+snippet ebs_header "emmet bootstrap header"
+	header>h1>a[href=${1:#}]\{${2:title}\}^p.lead\{${3:lorem10}\}
+endsnippet
+
+snippet ebs_navbar "emmet bootstrap navbar"
+	.navbar>ul>li*${1:number}>a[href=${2:#}]\{${3:linkname} \$\}
+endsnippet
+
+snippet ebs_carousel "emmet bootstrap carousel"
+	.carousel.slide#${2:idname_carousel}>(ol.carousel-indicators>li[data-target=#$2 data-slide-to=\$]*${1:3})(.carousel-inner>.item*$1>img[src=${3:http://lorempixel.com/1170/300} alt=Image]+.carousel-caption\{This is a caption \$\})(a[href=$1 data-slide=prev].left.carousel-control>span.icon-prev^a[href=$1 data-slide=next].right.carousel-control>span.icon-next)
+endsnippet
+
+snippet ebs_feature "emmet boostrap feature"
+	section#${1:idname_feature}>h3\{${5:Product Features}\}+p\{${6:Here why you should really buy this product.}\}+hr+(.row>.col-lg-4>.media>a[href=${2:#}].pull-left>img[src=${3:http://lorempixel.com/64/64} alt=${4:Image}]^.media-body>h4.media-heading\{${7:Feature name}\}+p>${8:lorem10})*4
+endsnippet
+
+snippet ebs_testimonial "emmet bootstrap testimonial"
+section#${2:idname_testimonial}>.panel>.panel-heading\{${3:A few words from our customers.}\}+.row>(.col-lg-6>blockquote>${4:lorem10}+small\{${5:John from}\}>cite\{${6:Source}\})*${1:2}
+endsnippet
+
+snippet ebs_ordernow "emmet bootstrap testimonial"
+section#${1:idname_order}>.well.well-lg>h3.text-center\{${3:Order now!}\}+p.text-center\{${4:Receive a great bonus}\}+p.text-center>a[href=${2:#}].btn.btn-primary\{${3:Place order &rarr;}\}
+endsnippet
